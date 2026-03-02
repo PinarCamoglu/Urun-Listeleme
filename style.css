@@ -1,0 +1,35 @@
+/* A) CSS Değişkenleri */
+:root {
+    --primary: #2563eb;
+    --bg: #f8fafc;
+    --text: #0f172a;
+    --muted: #64748b;
+    --radius: 12px;
+    --shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+    --header-bg: rgba(255, 255, 255, 0.8);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); line-height: 1.5; font-size: 16px; }
+
+/* B) Header (Sticky & Flex) */
+.header {
+    position: sticky; top: 0;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 1rem 5%; background: var(--header-bg); backdrop-filter: blur(10px);
+    z-index: 1000; border-bottom: 1px solid #e2e8f0;
+}
+.nav { display: flex; gap: 1.5rem; }
+.nav a { text-decoration: none; color: var(--text); font-weight: 500; transition: 0.3s; }
+.nav a:hover, .nav a.active { color: var(--primary); }
+
+/* Hero Alanı (Degrade) */
+.hero {
+    background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+    padding: 4rem 5%; text-align: center;
+}
+.btn-hero { background: var(--primary); color: white; border: none; padding: 0.8rem 2rem; border-radius: var(--radius); cursor: pointer; margin-top: 1rem; }
+
+/* D) Etkileşimler */
+.search-input:focus { outline: none; border: 2px solid var(--primary); }
+.card:hover { transform: translateY(-5px); box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); transition: 0.3s; }
