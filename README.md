@@ -61,6 +61,7 @@ Tasarım tutarlılığını sağlamak için `:root` altında tanımlanan temel d
 --muted: Yardımcı metin rengi
 --radius: Kenar yumuşatma (12px)
 --shadow: Kart ve bileşen gölgeleri
+```
 
 ### 4. Öğrendiklerim ve Zorlandıklarım
 
