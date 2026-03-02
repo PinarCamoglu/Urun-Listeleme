@@ -61,3 +61,17 @@ Tasarım tutarlılığını sağlamak için `:root` altında tanımlanan temel d
 --muted: Yardımcı metin rengi
 --radius: Kenar yumuşatma (12px)
 --shadow: Kart ve bileşen gölgeleri
+
+### 4. Öğrendiklerim ve Zorlandıklarım
+
+#### Öğrendiklerim
+- CSS değişkenleri kullanmanın, büyük projelerde renk revizyonu yaparken ciddi zaman kazandırdığını fark ettim.
+- Grid sisteminde `repeat(4, 1fr)` kullanımıyla esnek ve hatasız sütun genişlikleri oluşturmayı pekiştirdim.
+- Farklı boyuttaki görsellerin kart içinde düzgün görünmesi için `object-fit: cover` özelliğinin önemini öğrendim.
+
+#### Zorlandıklarım
+- Sticky header yapısında `backdrop-filter` (bulanıklık efekti) eklerken `z-index` çakışmaları yaşadım.
+- Katman hiyerarşisini doğru kurgulayarak bu sorunu çözdüm.
+
+**Hazırlayan:** [Pınar Çamoğlu](https://github.com/PinarCamoglu)  
+*Ondokuz Mayıs Üniversitesi - Bilgisayar Mühendisliği*
