@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShopLite | Ürün Listeleme</title>
+    <title>Urun-Listeleme | ShopLite</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
+
+    <header class="main-header">
         <div class="logo">ShopLite</div>
-        <nav class="nav">
+        <nav class="nav-menu">
             <a href="#" class="active">Ana Sayfa</a>
             <a href="#">Ürünler</a>
             <a href="#">İletişim</a>
@@ -19,12 +20,14 @@
     <main>
         <section class="hero">
             <h1>Tarzını Keşfet</h1>
-            <p>En yeni teknoloji ürünleri ve benzersiz fırsatlar ShopLite'da seni bekliyor.</p>
+            <p>En yeni teknoloji ürünleri ve benzersiz fırsatlar seni bekliyor.</p>
             <button class="btn-hero">İncele</button>
         </section>
 
         <section class="filter-bar">
-            <input type="text" class="search-input" placeholder="Ürün ara...">
+            <div class="search-container">
+                <input type="text" placeholder="Ürün ara..." class="search-input">
+            </div>
             <div class="chips">
                 <span class="chip">Yeni</span>
                 <span class="chip">Popüler</span>
@@ -34,23 +37,102 @@
 
         <section class="product-grid">
             <article class="card">
-                <div class="card-img">Görsel Alanı</div>
-                <div class="card-content">
-                    <h3>Akıllı Saat Pro</h3>
-                    <p>Yüksek çözünürlüklü ekran ve uzun pil ömrü.</p>
-                    <div class="price">3.499 TL</div>
+                <div class="badge yeni">Yeni</div>
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500" alt="Ürün">
+                <div class="card-body">
+                    <h3>Kablosuz Kulaklık</h3>
+                    <p>Yüksek ses kalitesi ve gürültü engelleme.</p>
+                    <div class="price">2.499 TL</div>
                     <button class="btn-add">Sepete Ekle</button>
                 </div>
             </article>
-            </section>
+
+            <article class="card">
+                <div class="badge populer">Popüler</div>
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500" alt="Ürün">
+                <div class="card-body">
+                    <h3>Akıllı Saat Pro</h3>
+                    <p>Sağlık takibi ve uzun pil ömrü.</p>
+                    <div class="price">3.150 TL</div>
+                    <button class="btn-add">Sepete Ekle</button>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="badge indirim">İndirimli</div>
+                <img src="https://img.fruugo.com/product/7/30/1790855307_max.jpg" alt="Ürün">
+                <div class="card-body">
+                    <h3>Retro Kamera</h3>
+                    <p>Anılarını klasik bir dokunuşla yakala.</p>
+                    <div class="price">1.850 TL</div>
+                    <button class="btn-add">Sepete Ekle</button>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="badge yeni">Yeni</div>
+                <img src="https://www.atombilisim.com.tr/turbox-tr-mk10pd-usb-kablolu-beyaz-rgb-makro-gaming-mekanik-klavye-pudding-tus-bilek-destekli-blue-switch-mekanik-rainbow-klavye-klavye-mouse-turbox-tr-mk10pd-124665-19-B.jpg" alt="Ürün">
+                <div class="card-body">
+                    <h3>Mekanik Klavye</h3>
+                    <p>Oyuncular için hızlı tepki süresi.</p>
+                    <div class="price">2.100 TL</div>
+                    <button class="btn-add">Sepete Ekle</button>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="badge populer">Popüler</div>
+                <img src="https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=500" alt="Ürün">
+                <div class="card-body">
+                    <h3>Klasik Kol Saati</h3>
+                    <p>Zarif ve dayanıklı paslanmaz çelik.</p>
+                    <div class="price">1.200 TL</div>
+                    <button class="btn-add">Sepete Ekle</button>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="badge indirim">İndirimli</div>
+                <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=500" alt="Ürün">
+                <div class="card-body">
+                    <h3>Polarize Gözlük</h3>
+                    <p>Gözlerinizi güneşin zararlı etkilerinden koruyun.</p>
+                    <div class="price">750 TL</div>
+                    <button class="btn-add">Sepete Ekle</button>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="badge yeni">Yeni</div>
+                <img src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=500" alt="Ürün">
+                <div class="card-body">
+                    <h3>Pro Tablet</h3>
+                    <p>Çizim ve iş hayatınız için ideal performans.</p>
+                    <div class="price">15.900 TL</div>
+                    <button class="btn-add">Sepete Ekle</button>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="badge populer">Popüler</div>
+                <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?w=500" alt="Ürün">
+                <div class="card-body">
+                    <h3>Stüdyo Kulaklık</h3>
+                    <p>Profesyonel ses mühendisleri için.</p>
+                    <div class="price">5.200 TL</div>
+                    <button class="btn-add">Sepete Ekle</button>
+                </div>
+            </article>
+        </section>
     </main>
 
-    <footer class="footer">
+    <footer class="main-footer">
         <p>&copy; 2026 ShopLite. Tüm Hakları Saklıdır.</p>
         <div class="footer-links">
-            <a href="#">Gizlilik</a>
+            <a href="#">Gizlilik Politikası</a>
             <a href="#">Şartlar</a>
         </div>
     </footer>
+
 </body>
 </html>
